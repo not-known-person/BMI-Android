@@ -5,25 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:id="@+id/mainLayout"
+    >
 
-    <androidx.appcompat.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
+        android:ems="10"
+        android:hint="@string/Activity_1_input_1"
+        android:inputType="number" />
 
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/Activity_1_input_2"
+        android:ems="10"
+        android:inputType="number"
+        android:id="@+id/heightFT"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/Activity_1_input_3"
+        android:ems="10"
+        android:inputType="number"
+        android:id="@+id/heightIN"
         />
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Btn_text"
-
-        />
-
-    <ImageView
-        android:id="@+id/imageView"
+        android:text="Calculate BMI"
+        android:backgroundTint="#4452A0"
+        android:id="@+id/button"
+/>
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars"
-        android:contentDescription="@string/alt" />
+        android:id="@+id/result"
+        />
 </LinearLayout>

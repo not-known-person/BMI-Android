@@ -2,4 +2,7 @@
     <string name="app_name">My Application</string>
     <string name="Btn_text">I am strong</string>
     <string name="alt">Demo</string>
+    <string name="Activity_1_input_1">Enter your weight</string>
+    <string name="Activity_1_input_2">Enter your height in ft</string>
+    <string name="Activity_1_input_3">Enter height in IN</string>
 </resources>
